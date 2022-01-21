@@ -1,7 +1,7 @@
 library(factoextra)
 #load data
 library(readr)
-heart <- read_csv("./heart.csv")
+heart <- read_csv("Activity-2/heart.csv")
 #scale data
 heart_scale <- scale(heart[1:13])
 #View(heart_scale)
