@@ -11,7 +11,7 @@ heart_dist <- dist(heart_scale)
 #calculate number of clusters
 (fviz_nbclust(heart_scale, kmeans , method = "wss" ) + 
   labs(subtitle = "Elbow method"))
-km.out <- kmeans(hear_scale,centers = 5 ,nstart = 100)
+km.out <- kmeans(heart_scale,centers = 5 ,nstart = 100)
 print(km.out)
 #results
 km.clusters <- km.out$cluster
